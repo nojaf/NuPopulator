@@ -9,6 +9,8 @@ public class PopulatorHostedService(
     IHostApplicationLifetime hostApplicationLifetime
 ) : IHostedService
 {
+    private const int NumberOfTypes = 5;
+
     public async Task StartAsync(CancellationToken cancellationToken)
     {
         logger.LogInformation("About to process {path}", options.JsonPath);
@@ -22,6 +24,15 @@ public class PopulatorHostedService(
             projects.Length,
             Path.GetFullPath(options.JsonPath)
         );
+
+        foreach (var project in projects)
+        {
+            if (project.IsFSharpProject)
+            {
+                await GenerateFSharpCode.Generate(5, project);
+            }
+        }
+
         hostApplicationLifetime.StopApplication();
     }
 
