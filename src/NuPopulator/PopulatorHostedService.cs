@@ -29,7 +29,11 @@ public class PopulatorHostedService(
         {
             if (project.IsFSharpProject)
             {
-                await GenerateFSharpCode.Generate(5, project);
+                await GenerateFSharpCode.Generate(NumberOfTypes, project);
+            }
+            else
+            {
+                await GenerateCSharpCode.Generate(NumberOfTypes, project);
             }
         }
 

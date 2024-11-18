@@ -6,30 +6,22 @@ public static class GenerateFSharpCode
 {
     private static string MapIntToAlphabet(int value)
     {
-        return (value >= 1 && value <= 26) ? ((char)('A' + value - 1)).ToString() : "Unknown";
+        return value >= 1 && value <= 26 ? ((char)('A' + value - 1)).ToString() : "Unknown";
     }
 
     private static Task ProduceTypes(int numberOfTypes, ProjectInfo projectInfo)
     {
-        var typeDefs = String.Join(
-            "\n",
-            Enumerable
-                .Range(1, numberOfTypes)
-                .Select(i => $"type {MapIntToAlphabet(i)} = class end")
-        );
-        var content = $"namespace {projectInfo.ProjectName}\n\n{typeDefs}\n";
+        var content = NuPopulator.FSharp.Generate.mkProducer(projectInfo.ProjectName);
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Produce.fs");
         return File.WriteAllTextAsync(outputPath, content);
     }
 
     private static Task ConsumeReferenceProjectTypes(ProjectInfo projectInfo)
     {
-        var types = String.Join(
-            ", ",
-            projectInfo.ReferencedProjects.Select((x, idx) => $"p{idx}: {x.ProjectName}.A")
+        var content = NuPopulator.FSharp.Generate.mkConsumer(
+            projectInfo.ProjectName,
+            projectInfo.ReferencedProjects.Select(r => r.ProjectName)
         );
-        var content =
-            $"module {projectInfo.ProjectName}.Consume\n\nlet fn ({types}) = Unchecked.defaultof<A>";
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Consume.fs");
         return File.WriteAllTextAsync(outputPath, content);
     }
