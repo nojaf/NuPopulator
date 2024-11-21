@@ -21,26 +21,17 @@ public class GenerateCSharpCode
 
     private static Task ProduceTypes(int numberOfTypes, ProjectInfo projectInfo)
     {
-        var typeDefs = String.Join(
-            "\n",
-            Enumerable
-                .Range(1, numberOfTypes)
-                .Select(i => $"\tpublic class {MapIntToAlphabet(i)} {{ }}")
-        );
-        var content = $"namespace {projectInfo.ProjectName} {{\n{typeDefs}\n}}";
+        var content = RoslynCodeGen.MkType(projectInfo.ProjectName);
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Produce.cs");
         return File.WriteAllTextAsync(outputPath, content);
     }
 
     private static Task ConsumeReferenceProjectTypes(ProjectInfo projectInfo)
     {
-        var types = String.Join(
-            ", ",
-            projectInfo.ReferencedProjects.Select((x, idx) => $"{x.ProjectName}.A p{idx}")
+        var content = RoslynCodeGen.MkProduce(
+            projectInfo.ProjectName,
+            projectInfo.ReferencedProjects.Select(rp => rp.ProjectName)
         );
-        var staticMethod = $"public static A Function({types}) {{ return default(A); }}";
-        var content =
-            $"namespace {projectInfo.ProjectName} {{\n\tpublic static class Consume {{\n\t\t{staticMethod}\n\t}}\n}}";
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Consume.cs");
         return File.WriteAllTextAsync(outputPath, content);
     }

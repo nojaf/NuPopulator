@@ -13,6 +13,8 @@ let namespaceKeyword = MultipleTextsNode([ stn "namespace" ], zeroRange)
 let unitNode = UnitNode(stn "(", stn ")", zeroRange)
 let unitPattern = Pattern.Unit(unitNode)
 let unitExpr = Expr.Constant(Constant.Unit(unitNode))
+let five = Expr.Constant(Constant.FromText(stn "5"))
+let six = Expr.Constant(Constant.FromText(stn "6"))
 
 let join f sep xs =
     match xs with
@@ -100,18 +102,21 @@ let mkConsumeBinding (referencedProjects: string seq) =
         |> Pattern.Paren
 
     let bodyExpr: Expr =
-        let xs =
-            [ 0 .. Seq.length referencedProjects ]
-            |> List.collect (fun idx ->
-                [ Expr.OptVar(ExprOptVarNode(false, idl $"p{idx}.V", zeroRange))
-                  Expr.AppLongIdentAndSingleParenArg(
-                      ExprAppLongIdentAndSingleParenArgNode(idl $"p{idx}.F", unitExpr, zeroRange)
-                  ) ])
+        if Seq.isEmpty referencedProjects then
+            five
+        else
+            let xs =
+                [ 0 .. (Seq.length referencedProjects - 1) ]
+                |> List.collect (fun idx ->
+                    [ Expr.OptVar(ExprOptVarNode(false, idl $"p{idx}.V", zeroRange))
+                      Expr.AppLongIdentAndSingleParenArg(
+                          ExprAppLongIdentAndSingleParenArgNode(idl $"p{idx}.F", unitExpr, zeroRange)
+                      ) ])
 
-        let plusOperator = stn "+"
+            let plusOperator = stn "+"
 
-        ExprSameInfixAppsNode(xs.Head, xs.Tail |> List.map (fun e -> (plusOperator, e)), zeroRange)
-        |> Expr.SameInfixApps
+            ExprSameInfixAppsNode(xs.Head, xs.Tail |> List.map (fun e -> (plusOperator, e)), zeroRange)
+            |> Expr.SameInfixApps
 
     mkBinding letKeyword "fn" [ parameters ] bodyExpr |> ModuleDecl.TopLevelBinding
 
@@ -121,11 +126,6 @@ let oakToString oak =
 let mkConsumer (namespaceName: string, referencedProjects: string seq) : string =
     mkModule $"%s{namespaceName}.Consumer" [ mkConsumeBinding referencedProjects ]
     |> oakToString
-
-let five = Expr.Constant(Constant.FromText(stn "5"))
-let six = Expr.Constant(Constant.FromText(stn "6"))
-
-
 
 let mkType name : ModuleDecl =
     let ctor = ImplicitConstructorNode(None, None, None, unitPattern, None, zeroRange)
