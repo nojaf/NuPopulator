@@ -1,0 +1,59 @@
+module Project228.Consumer
+
+let fn
+    (
+        p0: Project15.A,
+        p1: Project63.A,
+        p2: Project60.A,
+        p3: Project72.A,
+        p4: Project256.A,
+        p5: Project265.A,
+        p6: Project153.A,
+        p7: Project109.A,
+        p8: Project110.A,
+        p9: Project129.A,
+        p10: Project138.A,
+        p11: Project128.A,
+        p12: Project140.A,
+        p13: Project239.A,
+        p14: Project257.A,
+        p15: Project259.A,
+        p16: Project156.A,
+        p17: Project199.A
+    ) =
+    p0.V
+    + p0.F()
+    + p1.V
+    + p1.F()
+    + p2.V
+    + p2.F()
+    + p3.V
+    + p3.F()
+    + p4.V
+    + p4.F()
+    + p5.V
+    + p5.F()
+    + p6.V
+    + p6.F()
+    + p7.V
+    + p7.F()
+    + p8.V
+    + p8.F()
+    + p9.V
+    + p9.F()
+    + p10.V
+    + p10.F()
+    + p11.V
+    + p11.F()
+    + p12.V
+    + p12.F()
+    + p13.V
+    + p13.F()
+    + p14.V
+    + p14.F()
+    + p15.V
+    + p15.F()
+    + p16.V
+    + p16.F()
+    + p17.V
+    + p17.F()
