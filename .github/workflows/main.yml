@@ -15,6 +15,3 @@ jobs:
         uses: actions/setup-dotnet@v4
       - name: Build tool
         run: dotnet build
-      - name: Build sample
-        run: dotnet build
-        working-directory: ./samples/LargeAppWithPrivatePackagesCentralised/solution
