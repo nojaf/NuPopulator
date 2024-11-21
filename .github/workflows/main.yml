@@ -1,0 +1,20 @@
+name: Build main
+
+on: [push, pull_request]
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v4
+      - name: Build tool
+        run: dotnet build
+      - name: Build sample
+        run: dotnet build
+        working-directory: ./samples/LargeAppWithPrivatePackagesCentralised/solution
