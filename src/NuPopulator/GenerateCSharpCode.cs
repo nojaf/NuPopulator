@@ -19,16 +19,20 @@ public class GenerateCSharpCode
         return value >= 1 && value <= 26 ? ((char)('A' + value - 1)).ToString() : "Unknown";
     }
 
-    private static Task ProduceTypes(int numberOfTypes, ProjectInfo projectInfo)
+    private static Task ProduceTypes(IEnumerable<string> typeNames, ProjectInfo projectInfo)
     {
-        var content = RoslynCodeGen.MkType(projectInfo.ProjectName);
+        var content = RoslynCodeGen.MkType(typeNames, projectInfo.ProjectName);
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Produce.cs");
         return File.WriteAllTextAsync(outputPath, content);
     }
 
-    private static Task ConsumeReferenceProjectTypes(ProjectInfo projectInfo)
+    private static Task ConsumeReferenceProjectTypes(
+        IEnumerable<string> typeNames,
+        ProjectInfo projectInfo
+    )
     {
-        var content = RoslynCodeGen.MkProduce(
+        var content = RoslynCodeGen.MkConsume(
+            typeNames,
             projectInfo.ProjectName,
             projectInfo.ReferencedProjects.Select(rp => rp.ProjectName)
         );
@@ -36,10 +40,10 @@ public class GenerateCSharpCode
         return File.WriteAllTextAsync(outputPath, content);
     }
 
-    public static async Task Generate(int numberOfTypes, ProjectInfo projectInfo)
+    public static async Task Generate(IEnumerable<string> typeNames, ProjectInfo projectInfo)
     {
         PurgeExistingFiles(projectInfo);
-        await ProduceTypes(numberOfTypes, projectInfo);
-        await ConsumeReferenceProjectTypes(projectInfo);
+        await ProduceTypes(typeNames, projectInfo);
+        await ConsumeReferenceProjectTypes(typeNames, projectInfo);
     }
 }

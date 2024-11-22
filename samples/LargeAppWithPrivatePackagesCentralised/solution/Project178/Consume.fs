@@ -1,6 +1,6 @@
 module Project178.Consumer
 
-let fn
+let fnA
     (
         p0: Project15.A,
         p1: Project60.A,
@@ -12,21 +12,796 @@ let fn
         p7: Project259.A,
         p8: Project177.A
     ) =
-    p0.V
-    + p0.F()
-    + p1.V
-    + p1.F()
-    + p2.V
-    + p2.F()
-    + p3.V
-    + p3.F()
-    + p4.V
-    + p4.F()
-    + p5.V
-    + p5.F()
-    + p6.V
-    + p6.F()
-    + p7.V
-    + p7.F()
-    + p8.V
-    + p8.F()
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnB
+    (
+        p0: Project15.B,
+        p1: Project60.B,
+        p2: Project96.B,
+        p3: Project4.B,
+        p4: Project230.B,
+        p5: Project128.B,
+        p6: Project257.B,
+        p7: Project259.B,
+        p8: Project177.B
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnC
+    (
+        p0: Project15.C,
+        p1: Project60.C,
+        p2: Project96.C,
+        p3: Project4.C,
+        p4: Project230.C,
+        p5: Project128.C,
+        p6: Project257.C,
+        p7: Project259.C,
+        p8: Project177.C
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnD
+    (
+        p0: Project15.D,
+        p1: Project60.D,
+        p2: Project96.D,
+        p3: Project4.D,
+        p4: Project230.D,
+        p5: Project128.D,
+        p6: Project257.D,
+        p7: Project259.D,
+        p8: Project177.D
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnE
+    (
+        p0: Project15.E,
+        p1: Project60.E,
+        p2: Project96.E,
+        p3: Project4.E,
+        p4: Project230.E,
+        p5: Project128.E,
+        p6: Project257.E,
+        p7: Project259.E,
+        p8: Project177.E
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnF
+    (
+        p0: Project15.F,
+        p1: Project60.F,
+        p2: Project96.F,
+        p3: Project4.F,
+        p4: Project230.F,
+        p5: Project128.F,
+        p6: Project257.F,
+        p7: Project259.F,
+        p8: Project177.F
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnG
+    (
+        p0: Project15.G,
+        p1: Project60.G,
+        p2: Project96.G,
+        p3: Project4.G,
+        p4: Project230.G,
+        p5: Project128.G,
+        p6: Project257.G,
+        p7: Project259.G,
+        p8: Project177.G
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnH
+    (
+        p0: Project15.H,
+        p1: Project60.H,
+        p2: Project96.H,
+        p3: Project4.H,
+        p4: Project230.H,
+        p5: Project128.H,
+        p6: Project257.H,
+        p7: Project259.H,
+        p8: Project177.H
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnI
+    (
+        p0: Project15.I,
+        p1: Project60.I,
+        p2: Project96.I,
+        p3: Project4.I,
+        p4: Project230.I,
+        p5: Project128.I,
+        p6: Project257.I,
+        p7: Project259.I,
+        p8: Project177.I
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnJ
+    (
+        p0: Project15.J,
+        p1: Project60.J,
+        p2: Project96.J,
+        p3: Project4.J,
+        p4: Project230.J,
+        p5: Project128.J,
+        p6: Project257.J,
+        p7: Project259.J,
+        p8: Project177.J
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnK
+    (
+        p0: Project15.K,
+        p1: Project60.K,
+        p2: Project96.K,
+        p3: Project4.K,
+        p4: Project230.K,
+        p5: Project128.K,
+        p6: Project257.K,
+        p7: Project259.K,
+        p8: Project177.K
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnL
+    (
+        p0: Project15.L,
+        p1: Project60.L,
+        p2: Project96.L,
+        p3: Project4.L,
+        p4: Project230.L,
+        p5: Project128.L,
+        p6: Project257.L,
+        p7: Project259.L,
+        p8: Project177.L
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnM
+    (
+        p0: Project15.M,
+        p1: Project60.M,
+        p2: Project96.M,
+        p3: Project4.M,
+        p4: Project230.M,
+        p5: Project128.M,
+        p6: Project257.M,
+        p7: Project259.M,
+        p8: Project177.M
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnN
+    (
+        p0: Project15.N,
+        p1: Project60.N,
+        p2: Project96.N,
+        p3: Project4.N,
+        p4: Project230.N,
+        p5: Project128.N,
+        p6: Project257.N,
+        p7: Project259.N,
+        p8: Project177.N
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnO
+    (
+        p0: Project15.O,
+        p1: Project60.O,
+        p2: Project96.O,
+        p3: Project4.O,
+        p4: Project230.O,
+        p5: Project128.O,
+        p6: Project257.O,
+        p7: Project259.O,
+        p8: Project177.O
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnP
+    (
+        p0: Project15.P,
+        p1: Project60.P,
+        p2: Project96.P,
+        p3: Project4.P,
+        p4: Project230.P,
+        p5: Project128.P,
+        p6: Project257.P,
+        p7: Project259.P,
+        p8: Project177.P
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnQ
+    (
+        p0: Project15.Q,
+        p1: Project60.Q,
+        p2: Project96.Q,
+        p3: Project4.Q,
+        p4: Project230.Q,
+        p5: Project128.Q,
+        p6: Project257.Q,
+        p7: Project259.Q,
+        p8: Project177.Q
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnR
+    (
+        p0: Project15.R,
+        p1: Project60.R,
+        p2: Project96.R,
+        p3: Project4.R,
+        p4: Project230.R,
+        p5: Project128.R,
+        p6: Project257.R,
+        p7: Project259.R,
+        p8: Project177.R
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnS
+    (
+        p0: Project15.S,
+        p1: Project60.S,
+        p2: Project96.S,
+        p3: Project4.S,
+        p4: Project230.S,
+        p5: Project128.S,
+        p6: Project257.S,
+        p7: Project259.S,
+        p8: Project177.S
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnT
+    (
+        p0: Project15.T,
+        p1: Project60.T,
+        p2: Project96.T,
+        p3: Project4.T,
+        p4: Project230.T,
+        p5: Project128.T,
+        p6: Project257.T,
+        p7: Project259.T,
+        p8: Project177.T
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnU
+    (
+        p0: Project15.U,
+        p1: Project60.U,
+        p2: Project96.U,
+        p3: Project4.U,
+        p4: Project230.U,
+        p5: Project128.U,
+        p6: Project257.U,
+        p7: Project259.U,
+        p8: Project177.U
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnV
+    (
+        p0: Project15.V,
+        p1: Project60.V,
+        p2: Project96.V,
+        p3: Project4.V,
+        p4: Project230.V,
+        p5: Project128.V,
+        p6: Project257.V,
+        p7: Project259.V,
+        p8: Project177.V
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnW
+    (
+        p0: Project15.W,
+        p1: Project60.W,
+        p2: Project96.W,
+        p3: Project4.W,
+        p4: Project230.W,
+        p5: Project128.W,
+        p6: Project257.W,
+        p7: Project259.W,
+        p8: Project177.W
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnX
+    (
+        p0: Project15.X,
+        p1: Project60.X,
+        p2: Project96.X,
+        p3: Project4.X,
+        p4: Project230.X,
+        p5: Project128.X,
+        p6: Project257.X,
+        p7: Project259.X,
+        p8: Project177.X
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnY
+    (
+        p0: Project15.Y,
+        p1: Project60.Y,
+        p2: Project96.Y,
+        p3: Project4.Y,
+        p4: Project230.Y,
+        p5: Project128.Y,
+        p6: Project257.Y,
+        p7: Project259.Y,
+        p8: Project177.Y
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()
+
+let fnZ
+    (
+        p0: Project15.Z,
+        p1: Project60.Z,
+        p2: Project96.Z,
+        p3: Project4.Z,
+        p4: Project230.Z,
+        p5: Project128.Z,
+        p6: Project257.Z,
+        p7: Project259.Z,
+        p8: Project177.Z
+    ) =
+    p0.Value
+    + p0.Fn()
+    + p1.Value
+    + p1.Fn()
+    + p2.Value
+    + p2.Fn()
+    + p3.Value
+    + p3.Fn()
+    + p4.Value
+    + p4.Fn()
+    + p5.Value
+    + p5.Fn()
+    + p6.Value
+    + p6.Fn()
+    + p7.Value
+    + p7.Fn()
+    + p8.Value
+    + p8.Fn()

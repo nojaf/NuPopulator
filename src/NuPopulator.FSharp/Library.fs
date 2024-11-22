@@ -78,7 +78,7 @@ let mkBinding leadingKeyword name parameters body =
         zeroRange
     )
 
-let mkConsumeBinding (referencedProjects: string seq) =
+let mkConsumeBinding typeName (referencedProjects: string seq) =
     let parameters =
         let ps =
             referencedProjects
@@ -87,7 +87,7 @@ let mkConsumeBinding (referencedProjects: string seq) =
                     PatParameterNode(
                         None,
                         Pattern.Named(PatNamedNode(None, stn $"p%i{idx}", zeroRange)),
-                        Some(Type.LongIdent(idl $"%s{rp}.A")),
+                        Some(Type.LongIdent(idl $"%s{rp}.%s{typeName}")),
                         zeroRange
                     )
                 ))
@@ -108,9 +108,9 @@ let mkConsumeBinding (referencedProjects: string seq) =
             let xs =
                 [ 0 .. (Seq.length referencedProjects - 1) ]
                 |> List.collect (fun idx ->
-                    [ Expr.OptVar(ExprOptVarNode(false, idl $"p{idx}.V", zeroRange))
+                    [ Expr.OptVar(ExprOptVarNode(false, idl $"p{idx}.Value", zeroRange))
                       Expr.AppLongIdentAndSingleParenArg(
-                          ExprAppLongIdentAndSingleParenArgNode(idl $"p{idx}.F", unitExpr, zeroRange)
+                          ExprAppLongIdentAndSingleParenArgNode(idl $"p{idx}.Fn", unitExpr, zeroRange)
                       ) ])
 
             let plusOperator = stn "+"
@@ -118,19 +118,23 @@ let mkConsumeBinding (referencedProjects: string seq) =
             ExprSameInfixAppsNode(xs.Head, xs.Tail |> List.map (fun e -> (plusOperator, e)), zeroRange)
             |> Expr.SameInfixApps
 
-    mkBinding letKeyword "fn" [ parameters ] bodyExpr |> ModuleDecl.TopLevelBinding
+    mkBinding letKeyword $"fn%s{typeName}" [ parameters ] bodyExpr
+    |> ModuleDecl.TopLevelBinding
 
 let oakToString oak =
     oak |> CodeFormatter.FormatOakAsync |> Async.RunSynchronously
 
-let mkConsumer (namespaceName: string, referencedProjects: string seq) : string =
-    mkModule $"%s{namespaceName}.Consumer" [ mkConsumeBinding referencedProjects ]
+let mkConsumer (typeNames: string seq, namespaceName: string, referencedProjects: string seq) : string =
+    mkModule
+        $"%s{namespaceName}.Consumer"
+        [ for typeName in typeNames do
+              yield mkConsumeBinding typeName referencedProjects ]
     |> oakToString
 
 let mkType name : ModuleDecl =
     let ctor = ImplicitConstructorNode(None, None, None, unitPattern, None, zeroRange)
-    let property = mkBinding memberKeyword "_.V" [] five |> MemberDefn.Member
-    let m = mkBinding memberKeyword "_.F" [ unitPattern ] six |> MemberDefn.Member
+    let property = mkBinding memberKeyword "_.Value" [] five |> MemberDefn.Member
+    let m = mkBinding memberKeyword "_.Fn" [ unitPattern ] six |> MemberDefn.Member
 
     TypeDefnRegularNode(
         TypeNameNode(None, None, stn "type", None, idl name, None, [], Some(ctor), Some(stn "="), None, zeroRange),
@@ -140,9 +144,6 @@ let mkType name : ModuleDecl =
     |> TypeDefn.Regular
     |> ModuleDecl.TypeDefn
 
-let mkProducer (namespaceName: string) =
-    mkNamespace
-        namespaceName
-        [ for char in 'A' .. 'E' do
-              mkType (string char) ]
+let mkProducer (typeNames: string seq, namespaceName: string) =
+    mkNamespace namespaceName (Seq.map mkType typeNames |> Seq.toList)
     |> oakToString

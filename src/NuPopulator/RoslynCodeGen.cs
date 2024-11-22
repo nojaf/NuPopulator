@@ -109,20 +109,20 @@ public static class RoslynCodeGen
         return syntaxTree.ToString();
     }
 
-    public static string MkType(string namespaceName)
+    public static string MkType(IEnumerable<string> typeNames, string namespaceName)
     {
-        var types = (new[] { "A", "B", "C", "D", "E" })
+        var types = typeNames
             .Select(name =>
             {
                 var propertyDeclaration = CreatePropertyDeclaration(
-                    "V",
+                    "Value",
                     IntegerType,
                     CreateIntegerExpression(3)
                 );
                 var methodDeclaration = CreateMethodDeclaration(
                     false,
                     IntegerType,
-                    "F",
+                    "Fn",
                     [],
                     CreateIntegerExpression(4)
                 );
@@ -132,27 +132,66 @@ public static class RoslynCodeGen
         return MkString(CreateNamespaceDeclaration(namespaceName, types));
     }
 
-    public static string MkProduce(string namespaceName, IEnumerable<string> referencedProjects)
+    public static string MkConsume(
+        IEnumerable<string> typeNames,
+        string namespaceName,
+        IEnumerable<string> referencedProjects
+    )
     {
-        var parameters = referencedProjects
-            .Select(
-                (rp, idx) =>
-                {
-                    var t = GetPrefixedType(rp, "A");
-                    return CreateParameter(t, $"p{idx}");
-                }
-            )
+        var methods = typeNames
+            .Select(typeName =>
+            {
+                var parameters = referencedProjects
+                    .Select(
+                        (rp, idx) =>
+                        {
+                            var t = GetPrefixedType(rp, typeName);
+                            return CreateParameter(t, $"p{idx}");
+                        }
+                    )
+                    .ToArray();
+
+                var bodyExpr = referencedProjects
+                    .SelectMany(
+                        (rp, idx) =>
+                        {
+                            var identifier = SyntaxFactory.IdentifierName($"p{idx}");
+                            return new ExpressionSyntax[]
+                            {
+                                SyntaxFactory.InvocationExpression(
+                                    SyntaxFactory.MemberAccessExpression(
+                                        SyntaxKind.SimpleMemberAccessExpression,
+                                        identifier,
+                                        SyntaxFactory.IdentifierName("Fn")
+                                    )
+                                ),
+                                SyntaxFactory.MemberAccessExpression(
+                                    SyntaxKind.SimpleMemberAccessExpression,
+                                    identifier,
+                                    SyntaxFactory.IdentifierName("Value")
+                                ),
+                            };
+                        }
+                    )
+                    .Aggregate(
+                        CreateIntegerExpression(0),
+                        (acc, expr) =>
+                            SyntaxFactory.BinaryExpression(SyntaxKind.AddExpression, acc, expr)
+                    );
+
+                var t = SyntaxFactory.IdentifierName(typeName);
+                var method = CreateMethodDeclaration(
+                    true,
+                    IntegerType,
+                    $"Function{typeName}",
+                    parameters,
+                    bodyExpr
+                );
+                return method;
+            })
             .ToArray();
 
-        var typeA = SyntaxFactory.IdentifierName("A");
-        var method = CreateMethodDeclaration(
-            true,
-            typeA,
-            "Function",
-            parameters,
-            CreateDefaultExpression(typeA)
-        );
-        var classDeclaration = CreateClassDeclaration(true, "Consumer", method);
+        var classDeclaration = CreateClassDeclaration(true, "Consumer", methods);
         var namespaceDeclaration = CreateNamespaceDeclaration(namespaceName, classDeclaration);
         return MkString(namespaceDeclaration);
     }

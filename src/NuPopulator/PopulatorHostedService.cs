@@ -9,7 +9,10 @@ public class PopulatorHostedService(
     IHostApplicationLifetime hostApplicationLifetime
 ) : IHostedService
 {
-    private const int NumberOfTypes = 5;
+    private IEnumerable<string> TypeNames = Enumerable
+        .Range('A', 26)
+        .Select(c => ((char)c).ToString())
+        .ToArray();
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
@@ -29,11 +32,11 @@ public class PopulatorHostedService(
         {
             if (project.IsFSharpProject)
             {
-                await GenerateFSharpCode.Generate(NumberOfTypes, project);
+                await GenerateFSharpCode.Generate(TypeNames, project);
             }
             else
             {
-                await GenerateCSharpCode.Generate(NumberOfTypes, project);
+                await GenerateCSharpCode.Generate(TypeNames, project);
             }
         }
 

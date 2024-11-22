@@ -9,16 +9,20 @@ public static class GenerateFSharpCode
         return value >= 1 && value <= 26 ? ((char)('A' + value - 1)).ToString() : "Unknown";
     }
 
-    private static Task ProduceTypes(int numberOfTypes, ProjectInfo projectInfo)
+    private static Task ProduceTypes(IEnumerable<string> typeNames, ProjectInfo projectInfo)
     {
-        var content = NuPopulator.FSharp.Generate.mkProducer(projectInfo.ProjectName);
+        var content = NuPopulator.FSharp.Generate.mkProducer(typeNames, projectInfo.ProjectName);
         var outputPath = Path.Combine(projectInfo.ProjectFile.DirectoryName, "Produce.fs");
         return File.WriteAllTextAsync(outputPath, content);
     }
 
-    private static Task ConsumeReferenceProjectTypes(ProjectInfo projectInfo)
+    private static Task ConsumeReferenceProjectTypes(
+        IEnumerable<string> typeNames,
+        ProjectInfo projectInfo
+    )
     {
         var content = NuPopulator.FSharp.Generate.mkConsumer(
+            typeNames,
             projectInfo.ProjectName,
             projectInfo.ReferencedProjects.Select(r => r.ProjectName)
         );
@@ -75,10 +79,10 @@ public static class GenerateFSharpCode
         await SaveXmlAsync(doc, projectInfo.ProjectFile.FullName);
     }
 
-    public static async Task Generate(int numberOfTypes, ProjectInfo projectInfo)
+    public static async Task Generate(IEnumerable<string> typeNames, ProjectInfo projectInfo)
     {
-        await ProduceTypes(numberOfTypes, projectInfo);
-        await ConsumeReferenceProjectTypes(projectInfo);
+        await ProduceTypes(typeNames, projectInfo);
+        await ConsumeReferenceProjectTypes(typeNames, projectInfo);
         await UpdateProjectFile(projectInfo);
     }
 }
