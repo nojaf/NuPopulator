@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project132\Project132.csproj" />
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project178\Project178.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package133" />
+    <PackageReference Include="Package142" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package24" />
+    <PackageReference Include="Package30" />
+    <PackageReference Include="Package42" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="ParquetSharp" />
+  </ItemGroup>
+</Project>

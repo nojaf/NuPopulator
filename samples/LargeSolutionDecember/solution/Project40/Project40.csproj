@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project258\Project258.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="JetBrains.Annotations" />
+    <PackageReference Include="morelinq" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package101" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package113" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package131" />
+    <PackageReference Include="Package141" />
+    <PackageReference Include="Package143" />
+    <PackageReference Include="Package155" />
+    <PackageReference Include="Package157" />
+    <PackageReference Include="Package161" />
+    <PackageReference Include="Package162" />
+    <PackageReference Include="Package169" />
+    <PackageReference Include="Package171" />
+    <PackageReference Include="Package173" />
+    <PackageReference Include="Package174" />
+    <PackageReference Include="Package175" />
+    <PackageReference Include="Package177" />
+    <PackageReference Include="Package178" />
+    <PackageReference Include="Package179" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package27" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package37" />
+    <PackageReference Include="Package38" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package42" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package58" />
+    <PackageReference Include="Package60" />
+    <PackageReference Include="Package75" />
+    <PackageReference Include="Package78" />
+    <PackageReference Include="Package84" />
+    <PackageReference Include="Package99" />
+    <PackageReference Include="prometheus-net" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+    <PackageReference Include="System.Management" />
+  </ItemGroup>
+</Project>

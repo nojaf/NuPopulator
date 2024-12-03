@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project174\Project174.csproj" />
+    <ProjectReference Include="..\Project288\Project288.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project71\Project71.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Consul.Net" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package134" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package224" />
+    <PackageReference Include="Package4" />
+  </ItemGroup>
+</Project>

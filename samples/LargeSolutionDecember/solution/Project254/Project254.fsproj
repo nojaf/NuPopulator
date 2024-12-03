@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project200\Project200.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="FSharp.Data" />
+    <PackageReference Include="FSharp.Plotly" />
+    <PackageReference Include="MathNet.Numerics" />
+    <PackageReference Include="MathNet.Numerics.FSharp" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package10" />
+    <PackageReference Include="Package103" />
+    <PackageReference Include="Package118" />
+    <PackageReference Include="Package119" />
+    <PackageReference Include="Package120" />
+    <PackageReference Include="Package122" />
+    <PackageReference Include="Package16" />
+    <PackageReference Include="Package17" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package24" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package56" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package61" />
+    <PackageReference Include="Package64" />
+    <PackageReference Include="Package84" />
+    <PackageReference Include="Package9" />
+    <PackageReference Include="YamlDotNet" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(DisableGitVersioning)' != 'true'">
+    <PackageReference Include="Nerdbank.GitVersioning" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

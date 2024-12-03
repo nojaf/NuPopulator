@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project135\Project135.csproj" />
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project153\Project153.fsproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project168\Project168.fsproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project181\Project181.fsproj" />
+    <ProjectReference Include="..\Project182\Project182.fsproj" />
+    <ProjectReference Include="..\Project184\Project184.fsproj" />
+    <ProjectReference Include="..\Project190\Project190.csproj" />
+    <ProjectReference Include="..\Project197\Project197.fsproj" />
+    <ProjectReference Include="..\Project19\Project19.fsproj" />
+    <ProjectReference Include="..\Project220\Project220.csproj" />
+    <ProjectReference Include="..\Project278\Project278.fsproj" />
+    <ProjectReference Include="..\Project296\Project296.fsproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project299\Project299.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project308\Project308.fsproj" />
+    <ProjectReference Include="..\Project312\Project312.csproj" />
+    <ProjectReference Include="..\Project313\Project313.fsproj" />
+    <ProjectReference Include="..\Project316\Project316.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord.Math" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Nerdbank.GitVersioning" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package10" />
+    <PackageReference Include="Package100" />
+    <PackageReference Include="Package11" />
+    <PackageReference Include="Package124" />
+    <PackageReference Include="Package133" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package218" />
+    <PackageReference Include="Package244" />
+    <PackageReference Include="Package29" />
+    <PackageReference Include="Package32" />
+    <PackageReference Include="Package34" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package56" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package61" />
+    <PackageReference Include="Package64" />
+    <PackageReference Include="Package7" />
+    <PackageReference Include="Package9" />
+    <PackageReference Include="Package94" />
+    <PackageReference Include="System.Data.SqlClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

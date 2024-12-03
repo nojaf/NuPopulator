@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project135\Project135.csproj" />
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project149\Project149.csproj" />
+    <ProjectReference Include="..\Project155\Project155.csproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project218\Project218.csproj" />
+    <ProjectReference Include="..\Project25\Project25.csproj" />
+    <ProjectReference Include="..\Project286\Project286.csproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project303\Project303.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project312\Project312.csproj" />
+    <ProjectReference Include="..\Project313\Project313.fsproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project61\Project61.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+    <ProjectReference Include="..\Project65\Project65.csproj" />
+    <ProjectReference Include="..\Project66\Project66.csproj" />
+    <ProjectReference Include="..\Project71\Project71.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" />
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Microsoft.Build" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Build.Locator" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NuGet.Versioning" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package106" />
+    <PackageReference Include="Package123" />
+    <PackageReference Include="Package14" />
+    <PackageReference Include="Package153" />
+    <PackageReference Include="Package154" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package218" />
+    <PackageReference Include="Package244" />
+    <PackageReference Include="Package249" />
+    <PackageReference Include="Package250" />
+    <PackageReference Include="Package251" />
+    <PackageReference Include="Package252" />
+    <PackageReference Include="Package253" />
+    <PackageReference Include="Package27" />
+    <PackageReference Include="Package36" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package42" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package5" />
+  </ItemGroup>
+</Project>

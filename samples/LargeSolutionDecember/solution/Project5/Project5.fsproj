@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project181\Project181.fsproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="OpenTelemetry" />
+    <PackageReference Include="OpenTelemetry.Exporter.Console" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package122" />
+    <PackageReference Include="Package16" />
+    <PackageReference Include="Package162" />
+    <PackageReference Include="Package17" />
+    <PackageReference Include="Package19" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package26" />
+    <PackageReference Include="Package27" />
+    <PackageReference Include="Package270" />
+    <PackageReference Include="Package274" />
+    <PackageReference Include="Package28" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package56" />
+    <PackageReference Include="Package82" />
+    <PackageReference Include="Package9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

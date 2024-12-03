@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project111\Project111.csproj" />
+    <ProjectReference Include="..\Project114\Project114.csproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project160\Project160.csproj" />
+    <ProjectReference Include="..\Project161\Project161.csproj" />
+    <ProjectReference Include="..\Project174\Project174.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project75\Project75.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord.Math" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Nerdbank.GitVersioning" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package106" />
+    <PackageReference Include="Package124" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package80" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project174\Project174.csproj" />
+    <ProjectReference Include="..\Project288\Project288.csproj" />
+    <ProjectReference Include="..\Project292\Project292.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project303\Project303.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+    <ProjectReference Include="..\Project71\Project71.csproj" />
+    <ProjectReference Include="..\Project73\Project73.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Consul.Net" />
+    <PackageReference Include="Equ" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package109" />
+    <PackageReference Include="Package11" />
+    <PackageReference Include="Package110" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package125" />
+    <PackageReference Include="Package134" />
+    <PackageReference Include="Package144" />
+    <PackageReference Include="Package146" />
+    <PackageReference Include="Package147" />
+    <PackageReference Include="Package152" />
+    <PackageReference Include="Package153" />
+    <PackageReference Include="Package154" />
+    <PackageReference Include="Package163" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package223" />
+    <PackageReference Include="Package224" />
+    <PackageReference Include="Package225" />
+    <PackageReference Include="Package226" />
+    <PackageReference Include="Package230" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package38" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package58" />
+    <PackageReference Include="Package66" />
+    <PackageReference Include="Package67" />
+    <PackageReference Include="Package68" />
+    <PackageReference Include="Package85" />
+    <PackageReference Include="Package95" />
+    <PackageReference Include="sbe-tool" />
+    <PackageReference Include="TimeZoneConverter" />
+  </ItemGroup>
+</Project>

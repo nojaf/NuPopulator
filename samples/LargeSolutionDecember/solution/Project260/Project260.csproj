@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition="false">
+    <ProjectReference Include="..\Project111\Project111.csproj" />
+    <ProjectReference Include="..\Project112\Project112.csproj" />
+    <ProjectReference Include="..\Project117\Project117.csproj" />
+    <ProjectReference Include="..\Project132\Project132.csproj" />
+    <ProjectReference Include="..\Project141\Project141.csproj" />
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project157\Project157.csproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project160\Project160.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project210\Project210.fsproj" />
+    <ProjectReference Include="..\Project236\Project236.csproj" />
+    <ProjectReference Include="..\Project248\Project248.fsproj" />
+    <ProjectReference Include="..\Project271\Project271.fsproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project299\Project299.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project75\Project75.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package2" />
+  </ItemGroup>
+  <ItemGroup Condition="false">
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+  </ItemGroup>
+</Project>

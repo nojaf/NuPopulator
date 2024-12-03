@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition="false">
+    <ProjectReference Include="..\Project110\Project110.fsproj" />
+    <ProjectReference Include="..\Project111\Project111.csproj" />
+    <ProjectReference Include="..\Project112\Project112.csproj" />
+    <ProjectReference Include="..\Project132\Project132.csproj" />
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project135\Project135.csproj" />
+    <ProjectReference Include="..\Project141\Project141.csproj" />
+    <ProjectReference Include="..\Project144\Project144.csproj" />
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project230\Project230.csproj" />
+    <ProjectReference Include="..\Project262\Project262.fsproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package2" />
+  </ItemGroup>
+  <ItemGroup Condition="false">
+    <PackageReference Include="Package10" />
+    <PackageReference Include="Package11" />
+    <PackageReference Include="Package117" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package14" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package6" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project318\Project318.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project63\Project63.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Equ" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Optional.net" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package105" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package14" />
+    <PackageReference Include="Package144" />
+    <PackageReference Include="Package169" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package222" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package36" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package58" />
+    <PackageReference Include="Package66" />
+    <PackageReference Include="Package67" />
+    <PackageReference Include="Package68" />
+    <PackageReference Include="Package74" />
+    <PackageReference Include="Package75" />
+    <PackageReference Include="Package80" />
+    <PackageReference Include="Polly" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+  </ItemGroup>
+</Project>

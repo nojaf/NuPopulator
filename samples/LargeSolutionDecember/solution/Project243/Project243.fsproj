@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition="false">
+    <ProjectReference Include="..\Project101\Project101.csproj" />
+    <ProjectReference Include="..\Project132\Project132.csproj" />
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project141\Project141.csproj" />
+    <ProjectReference Include="..\Project142\Project142.fsproj" />
+    <ProjectReference Include="..\Project144\Project144.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project181\Project181.fsproj" />
+    <ProjectReference Include="..\Project182\Project182.fsproj" />
+    <ProjectReference Include="..\Project222\Project222.csproj" />
+    <ProjectReference Include="..\Project228\Project228.csproj" />
+    <ProjectReference Include="..\Project230\Project230.csproj" />
+    <ProjectReference Include="..\Project236\Project236.csproj" />
+    <ProjectReference Include="..\Project237\Project237.fsproj" />
+    <ProjectReference Include="..\Project239\Project239.csproj" />
+    <ProjectReference Include="..\Project240\Project240.csproj" />
+    <ProjectReference Include="..\Project242\Project242.csproj" />
+    <ProjectReference Include="..\Project244\Project244.csproj" />
+    <ProjectReference Include="..\Project245\Project245.fsproj" />
+    <ProjectReference Include="..\Project248\Project248.fsproj" />
+    <ProjectReference Include="..\Project262\Project262.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package2" />
+  </ItemGroup>
+  <ItemGroup Condition="false">
+    <PackageReference Include="MathNet.Numerics" />
+    <PackageReference Include="Package10" />
+    <PackageReference Include="Package11" />
+    <PackageReference Include="Package118" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package120" />
+    <PackageReference Include="Package122" />
+    <PackageReference Include="Package14" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package55" />
+    <PackageReference Include="Package57" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package61" />
+    <PackageReference Include="Package64" />
+    <PackageReference Include="Package9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

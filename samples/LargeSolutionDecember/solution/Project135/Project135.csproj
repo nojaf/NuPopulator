@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ARSoft.Tools.Net.Core" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package185" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package239" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package38" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package59" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package68" />
+    <PackageReference Include="Package99" />
+    <PackageReference Include="System.CodeDom" />
+  </ItemGroup>
+</Project>

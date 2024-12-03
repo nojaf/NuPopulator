@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project184\Project184.fsproj" />
+    <ProjectReference Include="..\Project318\Project318.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord.Math" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="log4net" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Nerdbank.GitVersioning" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package124" />
+    <PackageReference Include="Package146" />
+    <PackageReference Include="Package2" />
+  </ItemGroup>
+</Project>

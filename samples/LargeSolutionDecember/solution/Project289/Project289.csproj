@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project288\Project288.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package134" />
+    <PackageReference Include="Package144" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package208" />
+    <PackageReference Include="Package242" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package38" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package85" />
+  </ItemGroup>
+</Project>

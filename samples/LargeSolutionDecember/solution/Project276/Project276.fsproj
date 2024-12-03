@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition="false">
+    <ProjectReference Include="..\Project101\Project101.csproj" />
+    <ProjectReference Include="..\Project102\Project102.fsproj" />
+    <ProjectReference Include="..\Project111\Project111.csproj" />
+    <ProjectReference Include="..\Project112\Project112.csproj" />
+    <ProjectReference Include="..\Project118\Project118.csproj" />
+    <ProjectReference Include="..\Project119\Project119.fsproj" />
+    <ProjectReference Include="..\Project132\Project132.csproj" />
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project135\Project135.csproj" />
+    <ProjectReference Include="..\Project141\Project141.csproj" />
+    <ProjectReference Include="..\Project148\Project148.csproj" />
+    <ProjectReference Include="..\Project153\Project153.fsproj" />
+    <ProjectReference Include="..\Project157\Project157.csproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project160\Project160.csproj" />
+    <ProjectReference Include="..\Project168\Project168.fsproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project181\Project181.fsproj" />
+    <ProjectReference Include="..\Project182\Project182.fsproj" />
+    <ProjectReference Include="..\Project19\Project19.fsproj" />
+    <ProjectReference Include="..\Project221\Project221.fsproj" />
+    <ProjectReference Include="..\Project232\Project232.fsproj" />
+    <ProjectReference Include="..\Project233\Project233.csproj" />
+    <ProjectReference Include="..\Project256\Project256.fsproj" />
+    <ProjectReference Include="..\Project262\Project262.fsproj" />
+    <ProjectReference Include="..\Project271\Project271.fsproj" />
+    <ProjectReference Include="..\Project275\Project275.csproj" />
+    <ProjectReference Include="..\Project296\Project296.fsproj" />
+    <ProjectReference Include="..\Project298\Project298.csproj" />
+    <ProjectReference Include="..\Project299\Project299.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project308\Project308.fsproj" />
+    <ProjectReference Include="..\Project313\Project313.fsproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project75\Project75.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package2" />
+  </ItemGroup>
+  <ItemGroup Condition="false">
+    <PackageReference Include="Package10" />
+    <PackageReference Include="Package100" />
+    <PackageReference Include="Package108" />
+    <PackageReference Include="Package12" />
+    <PackageReference Include="Package3" />
+    <PackageReference Include="Package32" />
+    <PackageReference Include="Package33" />
+    <PackageReference Include="Package34" />
+    <PackageReference Include="Package36" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package61" />
+    <PackageReference Include="Package64" />
+    <PackageReference Include="Package7" />
+    <PackageReference Include="Package9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

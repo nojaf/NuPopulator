@@ -1,0 +1,135 @@
+namespace Project40
+{
+    public static class Consumer
+    {
+        public static int FunctionA(Project258.A p0, Project301.A p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionB(Project258.B p0, Project301.B p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionC(Project258.C p0, Project301.C p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionD(Project258.D p0, Project301.D p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionE(Project258.E p0, Project301.E p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionF(Project258.F p0, Project301.F p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionG(Project258.G p0, Project301.G p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionH(Project258.H p0, Project301.H p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionI(Project258.I p0, Project301.I p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionJ(Project258.J p0, Project301.J p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionK(Project258.K p0, Project301.K p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionL(Project258.L p0, Project301.L p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionM(Project258.M p0, Project301.M p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionN(Project258.N p0, Project301.N p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionO(Project258.O p0, Project301.O p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionP(Project258.P p0, Project301.P p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionQ(Project258.Q p0, Project301.Q p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionR(Project258.R p0, Project301.R p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionS(Project258.S p0, Project301.S p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionT(Project258.T p0, Project301.T p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionU(Project258.U p0, Project301.U p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionV(Project258.V p0, Project301.V p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionW(Project258.W p0, Project301.W p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionX(Project258.X p0, Project301.X p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionY(Project258.Y p0, Project301.Y p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+
+        public static int FunctionZ(Project258.Z p0, Project301.Z p1)
+        {
+            return 0 + p0.Fn() + p0.Value + p1.Fn() + p1.Value;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project133\Project133.csproj" />
+    <ProjectReference Include="..\Project135\Project135.csproj" />
+    <ProjectReference Include="..\Project153\Project153.fsproj" />
+    <ProjectReference Include="..\Project181\Project181.fsproj" />
+    <ProjectReference Include="..\Project256\Project256.fsproj" />
+    <ProjectReference Include="..\Project296\Project296.fsproj" />
+    <ProjectReference Include="..\Project299\Project299.fsproj" />
+    <ProjectReference Include="..\Project300\Project300.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project308\Project308.fsproj" />
+    <ProjectReference Include="..\Project309\Project309.fsproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project5\Project5.fsproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FsCheck.NUnit" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="FSharp.Plotly" />
+    <PackageReference Include="FsUnit" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package101" />
+    <PackageReference Include="Package142" />
+    <PackageReference Include="Package144" />
+    <PackageReference Include="Package16" />
+    <PackageReference Include="Package17" />
+    <PackageReference Include="Package19" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package24" />
+    <PackageReference Include="Package26" />
+    <PackageReference Include="Package276" />
+    <PackageReference Include="Package279" />
+    <PackageReference Include="Package28" />
+    <PackageReference Include="Package29" />
+    <PackageReference Include="Package32" />
+    <PackageReference Include="Package33" />
+    <PackageReference Include="Package34" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="Package51" />
+    <PackageReference Include="Package53" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package7" />
+    <PackageReference Include="Package9" />
+    <PackageReference Include="System.Data.SqlClient" />
+    <PackageReference Include="System.IO.Abstractions.TestingHelpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>

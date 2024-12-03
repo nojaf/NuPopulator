@@ -1,0 +1,109 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project100\Project100.csproj" />
+    <ProjectReference Include="..\Project102\Project102.fsproj" />
+    <ProjectReference Include="..\Project105\Project105.csproj" />
+    <ProjectReference Include="..\Project109\Project109.fsproj" />
+    <ProjectReference Include="..\Project110\Project110.fsproj" />
+    <ProjectReference Include="..\Project126\Project126.fsproj" />
+    <ProjectReference Include="..\Project127\Project127.fsproj" />
+    <ProjectReference Include="..\Project128\Project128.fsproj" />
+    <ProjectReference Include="..\Project129\Project129.csproj" />
+    <ProjectReference Include="..\Project131\Project131.fsproj" />
+    <ProjectReference Include="..\Project150\Project150.fsproj" />
+    <ProjectReference Include="..\Project151\Project151.fsproj" />
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project188\Project188.fsproj" />
+    <ProjectReference Include="..\Project200\Project200.csproj" />
+    <ProjectReference Include="..\Project213\Project213.fsproj" />
+    <ProjectReference Include="..\Project214\Project214.csproj" />
+    <ProjectReference Include="..\Project219\Project219.csproj" />
+    <ProjectReference Include="..\Project220\Project220.csproj" />
+    <ProjectReference Include="..\Project224\Project224.csproj" />
+    <ProjectReference Include="..\Project225\Project225.fsproj" />
+    <ProjectReference Include="..\Project226\Project226.csproj" />
+    <ProjectReference Include="..\Project232\Project232.fsproj" />
+    <ProjectReference Include="..\Project236\Project236.csproj" />
+    <ProjectReference Include="..\Project244\Project244.csproj" />
+    <ProjectReference Include="..\Project252\Project252.fsproj" />
+    <ProjectReference Include="..\Project254\Project254.fsproj" />
+    <ProjectReference Include="..\Project29\Project29.csproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project303\Project303.csproj" />
+    <ProjectReference Include="..\Project30\Project30.fsproj" />
+    <ProjectReference Include="..\Project310\Project310.csproj" />
+    <ProjectReference Include="..\Project321\Project321.csproj" />
+    <ProjectReference Include="..\Project324\Project324.csproj" />
+    <ProjectReference Include="..\Project33\Project33.fsproj" />
+    <ProjectReference Include="..\Project35\Project35.fsproj" />
+    <ProjectReference Include="..\Project36\Project36.fsproj" />
+    <ProjectReference Include="..\Project37\Project37.fsproj" />
+    <ProjectReference Include="..\Project38\Project38.fsproj" />
+    <ProjectReference Include="..\Project3\Project3.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project42\Project42.fsproj" />
+    <ProjectReference Include="..\Project46\Project46.fsproj" />
+    <ProjectReference Include="..\Project48\Project48.csproj" />
+    <ProjectReference Include="..\Project54\Project54.csproj" />
+    <ProjectReference Include="..\Project59\Project59.csproj" />
+    <ProjectReference Include="..\Project60\Project60.csproj" />
+    <ProjectReference Include="..\Project69\Project69.fsproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project77\Project77.fsproj" />
+    <ProjectReference Include="..\Project78\Project78.fsproj" />
+    <ProjectReference Include="..\Project79\Project79.fsproj" />
+    <ProjectReference Include="..\Project85\Project85.fsproj" />
+    <ProjectReference Include="..\Project86\Project86.fsproj" />
+    <ProjectReference Include="..\Project88\Project88.fsproj" />
+    <ProjectReference Include="..\Project89\Project89.fsproj" />
+    <ProjectReference Include="..\Project91\Project91.fsproj" />
+    <ProjectReference Include="..\Project92\Project92.fsproj" />
+    <ProjectReference Include="..\Project93\Project93.fsproj" />
+    <ProjectReference Include="..\Project94\Project94.fsproj" />
+    <ProjectReference Include="..\Project95\Project95.fsproj" />
+    <ProjectReference Include="..\Project96\Project96.fsproj" />
+    <ProjectReference Include="..\Project97\Project97.fsproj" />
+    <ProjectReference Include="..\Project9\Project9.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord.Math" />
+    <PackageReference Include="Confluent.Kafka" />
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="MathNet.Numerics.Fsharp" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="Nerdbank.GitVersioning" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package106" />
+    <PackageReference Include="Package108" />
+    <PackageReference Include="Package117" />
+    <PackageReference Include="Package124" />
+    <PackageReference Include="Package126" />
+    <PackageReference Include="Package134" />
+    <PackageReference Include="Package141" />
+    <PackageReference Include="Package143" />
+    <PackageReference Include="Package146" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package231" />
+    <PackageReference Include="Package4" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package45" />
+    <PackageReference Include="Package5" />
+    <PackageReference Include="R.NET" />
+    <PackageReference Include="sbe-tool" />
+    <PackageReference Include="Serialize.Linq" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+    <PackageReference Include="System.IO.Abstractions.TestingHelpers" />
+  </ItemGroup>
+</Project>

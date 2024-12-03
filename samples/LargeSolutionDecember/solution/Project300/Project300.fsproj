@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <DisableImplicitSystemValueTupleReference>true</DisableImplicitSystemValueTupleReference>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project15\Project15.csproj" />
+    <ProjectReference Include="..\Project17\Project17.csproj" />
+    <ProjectReference Include="..\Project256\Project256.fsproj" />
+    <ProjectReference Include="..\Project299\Project299.fsproj" />
+    <ProjectReference Include="..\Project301\Project301.csproj" />
+    <ProjectReference Include="..\Project307\Project307.csproj" />
+    <ProjectReference Include="..\Project40\Project40.csproj" />
+    <ProjectReference Include="..\Project43\Project43.csproj" />
+    <ProjectReference Include="..\Project72\Project72.csproj" />
+    <ProjectReference Include="..\Project98\Project98.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DeepEqual" />
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="FsUnit" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NBench" />
+    <PackageReference Include="NBench.Runner" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Package1" />
+    <PackageReference Include="Package104" />
+    <PackageReference Include="Package111" />
+    <PackageReference Include="Package112" />
+    <PackageReference Include="Package113" />
+    <PackageReference Include="Package114" />
+    <PackageReference Include="Package115" />
+    <PackageReference Include="Package116" />
+    <PackageReference Include="Package2" />
+    <PackageReference Include="Package29" />
+    <PackageReference Include="Package31" />
+    <PackageReference Include="Package32" />
+    <PackageReference Include="Package33" />
+    <PackageReference Include="Package34" />
+    <PackageReference Include="Package39" />
+    <PackageReference Include="Package44" />
+    <PackageReference Include="Package51" />
+    <PackageReference Include="Package6" />
+    <PackageReference Include="Package7" />
+    <PackageReference Include="Package81" />
+    <PackageReference Include="Package85" />
+    <PackageReference Include="Package9" />
+    <PackageReference Include="Package99" />
+    <PackageReference Include="Parquet.Net" />
+    <PackageReference Include="TypeShape" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Produce.fs" />
+    <Compile Include="Consume.fs" />
+  </ItemGroup>
+</Project>
